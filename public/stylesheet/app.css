@@ -1,0 +1,16 @@
+i.icon {
+font-size: 2.2em;
+
+
+}
+
+.ui inverted segment{
+
+position: relative;
+top: 500px;
+
+
+}
+#delete{
+    display:inline;
+}

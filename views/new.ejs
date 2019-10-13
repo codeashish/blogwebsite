@@ -1,0 +1,29 @@
+<% include   ./partials/header%>
+
+
+<div  class="ui form"  style="width:50%;height:60%;background-Color:#eee;border:2px solid #eee;position:absolute;left:300px;box-shadow: 2px 2px 2px black;text-align:left   ;border-radius: 3px;margin:10px;padding:10px; "  > 
+    <form class="ui form" action="/blogs" method="POST"  >
+      <h1> NEW BLOG</h1>
+        <div class="field"  >
+          <label>Title</label>
+          <input type="text " name="blog[title]" placeholder="Title"  style="width:60%;height:30px;border-radius: 5px;border:none;padding:20px;" >
+        
+        </div>
+      
+
+        <div class="field">
+          <label>Image</label>
+          <input type="text" name="blog[image]" placeholder="Image">
+        </div>
+
+        <div class="field"  >
+                <label>Description</label>
+                <textarea name="blog[body]" >   </textarea>
+
+              </div>
+
+     
+        <button  class="ui voilet big inverted button" class="ui button" type="submit" style="color:black" >Submit</button>
+      </form>
+</div>
+

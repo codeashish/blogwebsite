@@ -1,0 +1,25 @@
+<% include   ./partials/header%>
+
+
+
+    
+
+<% blogs.forEach(function(blog){%>
+<div>
+          <h2>   <%=  blog.title %></h2>
+           <img src="<%=blog.image%>"  >
+           <span>  <%=blog.created.toDateString() %></span><br>
+           <span> <%=blog.body.substring(0,50)%></span> 
+          <a class="ui floated basic violet button" href="/blogs/<%= blog._id %>">Show more</a>
+<div>
+
+
+
+
+
+
+
+
+
+<%});   %>
+<% include   ./partials/footer%>
